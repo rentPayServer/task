@@ -6,7 +6,7 @@ def add_task(scheduler=None,mysql=None):
 
     scheduler.add_job(clearData, 'cron',
                       hour=00,
-                      minute=20,
+                      minute=30,
                       second=00,
                       kwargs={
                           "db":mysql
