@@ -5,9 +5,9 @@ from tasks.run import clearData
 def add_task(scheduler=None,mysql=None):
 
     scheduler.add_job(clearData, 'cron',
-                      hour=00,
-                      minute=30,
-                      second=00,
+                      hour=3,
+                      minute=0,
+                      second=0,
                       kwargs={
                           "db":mysql
                       })

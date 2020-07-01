@@ -19,7 +19,7 @@ mysql=dict(
     name = os.environ.get('DBNAME', 'allwin_new'),
 	password = os.environ.get('DBPASS', '123456'),
     min_connections=2,
-    max_connections=10,
+    max_connections=5,
     charset='utf8'
 )
 
@@ -28,8 +28,8 @@ redis=dict(
     port=6379,
     password="123456",
     db = 0,
-    minsize = 5,
-    maxsize = 20,
+    minsize = 1,
+    maxsize = 2,
     encoding = 'utf8'
 )
 
